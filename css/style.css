@@ -1,0 +1,385 @@
+/* Google font  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+/* Common Style */
+.container{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #0fcee7;
+    margin: 50px 0;
+}
+
+/* Header Section Start */
+/* Navber */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navber{
+    display: flex;
+}
+.navber li{
+    list-style: none;
+    margin: 20px;
+}
+.navber li a{
+    text-decoration: none;
+    color: #0fcee7;
+}
+.navber .nav-icon{
+    color: #0fcee7;
+}
+.logo h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Banner */
+.banner{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-right{
+    display: flex;
+
+}
+.banner-left h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner-left p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-button{
+    border-style: none;
+    background-color: #0fcee7;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.banner-right img{
+    width: 100%;
+}
+/* Header Section End */
+
+/* Collection Section Start */
+.collection-boxs{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.collection-box{
+    margin: 0 auto;
+}
+.collection-content{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px #ecf7f8;
+    
+}
+.collection-content:hover{
+    background-color: #0fcee7;
+    color: #fff;
+}
+.collection-img img{
+    width: 100%;
+}
+.collection-details{
+
+}
+.collection-details h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.collection-details h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.collection-details h5{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.ratings .filled{
+    color: #ffb30e;
+}
+.collection-details .ratings .half{
+    color: #dfdeded3;
+}
+.see-more{
+    justify-content: right;
+    text-align: right;
+}
+.see-more-btn{
+    background: none;
+    border: 2px solid #0fcee7;
+    background-color: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.see-more-btn a{
+    text-decoration: none;
+    color: #0fcee7;
+    font-size: 18px;   
+}
+/* Collection Section End */
+
+
+/* Influencer Review Start */
+.influencer-review{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.review-box{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px #ecf7f8;
+    text-align: center;
+}
+.review-box:hover{
+    background-color: #0fcee7;
+    color: #fff;
+}
+.review-box img{
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.review-box p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.review-box h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+/* Influencer Review End */
+
+/* Footer Section Start */
+.footer{
+    background-color: #0A0826;
+    margin-top: 30px;
+}
+.footer-content {
+    text-align: center;
+}
+.footer-content h2 {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 30px;
+}
+.footer-content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5px;
+}
+.social-icon {
+    text-align: center;
+}
+.icons .social-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon .fab {
+    color: #E02C6D;
+    background-color: #22203B;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+/* Footer Section Start */
+
+
+
+/*------------
+Media Queries 
+--------------*/
+
+@media (min-width:689px) and (max-width: 1080px){
+    .container{
+        width: 100%;
+    }
+    .section-title h1{
+        font-size: 35px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .navber{
+        display: none;
+    }
+    .logo h1{
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .banner-left{
+        align-items: center;
+        text-align: center;
+    }
+    .banner-left h1{
+        font-size: 35px;
+    }
+    .banner-left p{
+        font-size: 18px;
+    }
+    .banner-button{
+        font-size: 16px;
+    }
+
+    
+    .collection-boxs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection-details h2{
+        font-size: 25px;
+    }
+    .collection-details h4{
+        font-size: 20px;
+    }
+    .collection-details h5{
+        font-size: 16px;
+    }
+    .see-more-btn a{
+        font-size: 16px;
+    }
+    .influencer-review{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 30px;
+    }
+    .review-box h2{
+        font-size: 22px;
+    }
+
+    .footer h2{
+        font-size: 20px;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 688px){
+    .container{
+        width: 100%;
+    }
+    .section-title h1{
+        font-size: 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .navber{
+        display: none;
+    }
+    .logo h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-left{
+        order: 2;
+    }
+    .banner-left{
+        align-items: center;
+        text-align: center;
+    }
+    .banner-left h1{
+        font-size: 30px;
+    }
+    .banner-left p{
+        font-size: 16px;
+    }
+    .banner-button{
+        font-size: 15px;
+    }
+
+    .collection-boxs{
+        grid-template-columns: 1fr;
+    }
+    .collection-details h2{
+        font-size: 20px;
+    }
+    .collection-details h4{
+        font-size: 18px;
+    }
+    .collection-details h5{
+        font-size: 15px;
+    }
+    .see-more-btn a{
+        font-size: 15px;
+    }
+    .influencer-review{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 30px;
+        justify-items: center;
+    }
+    .review-box{
+        width: 350px;
+    }
+    .review-box p{
+        font-size: 15px;
+    }
+    .review-box h2{
+        font-size: 20px;
+    }
+
+    .footer h2{
+        font-size: 20px;
+    }
+    .footer p{
+        font-size: 15px;
+    }
+    
+}
